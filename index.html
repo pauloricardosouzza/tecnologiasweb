@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
 
-    <!-- CDNs para importação do Bootstrap -->
-    <!-- Latest compiled and minified CSS -->
+    <!-- CDN da última versão compilada do Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Latest compiled JavaScript -->
+
+    <!-- CDN da última versão compilada do JavaScript CSS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Importação da fonte -->
+    <!-- Link para Fonte utilizada no Cabeçalho (Google Fonts) -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Sedgwick+Ave+Display&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Borel&family=Sedgwick+Ave+Display&family=Shadows+Into+Light&display=swap');
     </style>
-</head>
 
+    <!-- CDN da últilma versão do Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
 <body>
-    <div class="container-fluid text-center">
+    
+    <!-- Cabeçalho da Página -->
+    <div class="container text-center">
         <img src="img/logo_joaninha.png" style="width:200px;" title="Joaninhas TB">
-        <h1 style="font-family: Nosifer;">Joaninhas TB</h1>
+        <h1 style="font-family: Black And White Picture; font-size: 36pt;">Joaninhas TB</h1>
     </div>
 
-    <!-- Nav Bar -->
+    <!-- Barra de Navegação -->
     <nav class="navbar navbar-expand-sm bg-danger navbar-dark sticky-top">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -33,32 +37,31 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Página Inicial</a>
+                        <a class="nav-link active" href="index.html" title="Ir para a Página Inicial">Página Inicial</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Link</a>
+                        <a class="nav-link disabled" href="#">Link Inativo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="formLogin.html">Login</a>
+                        <a class="nav-link" href="formLogin.html" title="Acessar o Sistema">Login</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Container que abrigará o conteúdo da página-->
-    <div class="container-fluid text-center" style="margin-top: 30px;">
+    <!-- Container que abrigará o conteúdo da página -->
+    <div class="container text-center" style="margin-top:30px; margin-bottom:100px;">
 
-        <div class="alert alert-info" style="width:50%; margin:auto;">
-            Há <strong>18</strong> espécies diferentes disponíveis em nosso estoque!
+        <div class="alert alert-info text-center" style="width:50%; margin:auto;">
+            Há <strong>18</strong> espécies diferentes disponíveis em nosso estoque! &nbsp<i class="bi bi-emoji-smile"></i>
         </div>
 
         <!-- Início da primeira linha da GRID -->
         <div class="row" style="margin-top:30px;">
-            <div class="col-3">
-                <!-- Card para exibição do Produto -->
+            <div class="col-sm-3">
                 <div class="card" style="width:100%; height:100%;">
-                    <img class="card-img-top" src="img/produto001.jpeg" alt="Joaninha Vermelha">
+                    <img class="card-img-top" src="img/produto001.jpeg" title='Joaninha Vermelha' alt="Joaninha Vermelha">
                     <div class="card-body">
                         <h4 class="card-title"><b>Joaninha Vermelha</b></h4>
                         <p class="card-text"><b>R$ 10,99</b></p>
@@ -66,33 +69,30 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3">
-                <!-- Card para exibição do Produto -->
-                <div class="card" style="width:100%; height:100%;">
-                    <img class="card-img-top" src="img/produto002.jpeg" alt="Joaninha Amarela">
-                    <div class="card-body">
+            <div class="col-sm-3">
+                <div class="card" style="width: 100%; height:100%;">
+                    <img class="card-img-top" src="img/produto002.jpeg" title='Joaninha Amarela' alt="Joaninha Amarela">
+                    <div class="card-body" style="height:100%">
                         <h4 class="card-title"><b>Joaninha Amarela</b></h4>
                         <p class="card-text"><b>R$ 12,99</b></p>
                         <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
                     </div>
                 </div>
             </div>
-            <div class="col-3">
-                <!-- Card para exibição do Produto -->
+            <div class="col-sm-3">
                 <div class="card" style="width:100%; height:100%;">
-                    <img class="card-img-top" src="img/produto003.jpeg" alt="Joaninha Azul">
-                    <div class="card-body">
+                    <img class="card-img-top" src="img/produto003.jpeg" title='Joaninha Azul' alt="Joaninha Azul">
+                    <div class="card-body" style="height:100%">
                         <h4 class="card-title"><b>Joaninha Azul</b></h4>
                         <p class="card-text"><b>R$ 14,99</b></p>
                         <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
                     </div>
                 </div>
             </div>
-            <div class="col-3">
-                <!-- Card para exibição do Produto -->
+            <div class="col-sm-3">
                 <div class="card" style="width:100%; height:100%;">
-                    <img class="card-img-top" src="img/produto004.jpg" alt="Joaninha Verde">
-                    <div class="card-body">
+                    <img class="card-img-top" src="img/produto004.jpg" title='Joaninha Verde' alt="Joaninha Verde">
+                    <div class="card-body" style="height:100%">
                         <h4 class="card-title"><b>Joaninha Verde</b></h4>
                         <p class="card-text"><b>R$ 18,99</b></p>
                         <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
@@ -100,73 +100,63 @@
                 </div>
             </div>
         </div>
+        <!-- Fim da primeira linha da GRID -->
 
-        <!-- Início da Segunda linha da GRID-->
-         <!-- Início da primeira linha da GRID -->
-         <div class="row" style="margin-top:30px;">
-            <div class="col-3">
-                <!-- Card para exibição do Produto -->
+        <!-- Início da segunda linha da GRID-->
+        <div class="row" style="margin-top:30px;">
+            <div class="col-sm-3">
                 <div class="card" style="width:100%; height:100%;">
-                    <img class="card-img-top" src="img/produto001.jpeg" alt="Joaninha Vermelha">
+                    <img class="card-img-top" src="img/produto005.jpeg" title='Joaninha Vermelha' alt="Joaninha Vermelha">
                     <div class="card-body">
-                        <h4 class="card-title"><b>Joaninha Vermelha</b></h4>
-                        <p class="card-text"><b>R$ 10,99</b></p>
+                        <h4 class="card-title"><b>Joaninha Preta</b></h4>
+                        <p class="card-text"><b>R$ 20,99</b></p>
                         <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
                     </div>
                 </div>
             </div>
-            <div class="col-3">
-                <!-- Card para exibição do Produto -->
-                <div class="card" style="width:100%; height:100%;">
-                    <img class="card-img-top" src="img/produto002.jpeg" alt="Joaninha Amarela">
-                    <div class="card-body">
-                        <h4 class="card-title"><b>Joaninha Amarela</b></h4>
-                        <p class="card-text"><b>R$ 12,99</b></p>
+            <div class="col-sm-3">
+                <div class="card" style="width: 100%; height:100%;">
+                    <img class="card-img-top" src="img/produto006.jpg" title='Joaninha Branca' alt="Joaninha Branca">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Joaninha Branca</b></h4>
+                        <p class="card-text"><b>R$ 20,99</b></p>
                         <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
                     </div>
                 </div>
             </div>
-            <div class="col-3">
-                <!-- Card para exibição do Produto -->
+            <div class="col-sm-3">
                 <div class="card" style="width:100%; height:100%;">
-                    <img class="card-img-top" src="img/produto003.jpeg" alt="Joaninha Azul">
-                    <div class="card-body">
-                        <h4 class="card-title"><b>Joaninha Azul</b></h4>
-                        <p class="card-text"><b>R$ 14,99</b></p>
+                    <img class="card-img-top" src="img/produto007.jpg" title='Joaninha Roxa' alt="Joaninha Roxa">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Joaninha Roxa</b></h4>
+                        <p class="card-text"><b>R$ 22,99</b></p>
                         <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
                     </div>
                 </div>
             </div>
-            <div class="col-3">
-                <!-- Card para exibição do Produto -->
+            <div class="col-sm-3">
                 <div class="card" style="width:100%; height:100%;">
-                    <img class="card-img-top" src="img/produto004.jpg" alt="Joaninha Verde">
-                    <div class="card-body">
-                        <h4 class="card-title"><b>Joaninha Verde</b></h4>
-                        <p class="card-text"><b>R$ 18,99</b></p>
+                    <img class="card-img-top" src="img/produto008.jpg" title='Joaninha Dourada' alt="Joaninha Dourada">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Joaninha Dourada</b></h4>
+                        <p class="card-text"><b>R$ 99,99</b></p>
                         <a href="visualizarProduto.html" class="btn btn-primary">Ver Detalhes</a>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Fim da segunda linha da GRID -->
 
     </div>
 
-
-    <!-- Rodapé fixado a baixo-->
+    <!-- Div do Rodapé (Fixa na base) -->
     <div class="mt-5 bg-danger text-white text-center fixed-bottom">
         <p>
-            Interfaces para um sistema de vendas de Joaninha<br>
+            Interfaces para um sistema de vendas de Joaninhas<br>
             Desenvolvido por
-            <b>
-                <a href="mailto:paulo.silva@ifpr.edu.br?subject=Tecnologoias Web">
-                    paulo.silva@ifpr.edu.br
-                </a>
-            </b>
-            na disciplina de Tecnologias Web
+            <b><a href="mailto:paulo.silva@ifpr.edu.br?subject=Tecnologias Web">paulo.silva@ifpr.edu.br</a></b> para utilização na disciplina de Tecnologias Web
         </p>
     </div>
 
 </body>
-
 </html>
